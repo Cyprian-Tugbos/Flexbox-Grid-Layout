@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Gentium+Plus&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  margin: 25px;
+}
+#flexbox-layout, #grid-layout {
+  text-decoration: none;
+  padding: 10px;
+}
+
+p{
+  font-size: 15px;
+  font-family:'Lexend Deca', sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 30px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  padding-left: 30px;
+  color: hsl(0, 0%, 95%);
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  border-radius: 8px;
+  height: 90vh;
+}
+
+img{
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.sedans{
+  background-color: hsl(31, 77%, 52%);
+  flex: 33.3%;
+  max-width: 33.3%;
+  border-radius: 8px 0 0 8px;
+}
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+  flex: 33.3%;
+  max-width: 33.3%;
+}
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+  flex: 33.3%;
+  max-width: 33.3%;
+  border-radius: 0 8px 8px 0;
+}
+
+.sedans-btn{
+  color: hsl(31, 77%, 52%);
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 12px;
+  margin: 0 0 30px 30px;
+  border: 3px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.sedans-btn:hover{
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs-btn{
+  color: hsl(184, 100%, 22%);
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 12px;
+  margin: 0 0 30px 30px;
+  border: 3px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.suvs-btn:hover{
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn{
+  color: hsl(179, 100%, 13%);
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 12px;
+  margin: 0 0 30px 30px;
+  border: 3px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.luxury-btn:hover{
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* RESPONSIVE STYLING FOR MOBILE */
+
+@media (max-width: 600px) {
+  .sedans,
+  .suvs,
+  .luxury {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sedans {
+    border-radius: 8px 8px 0 0;
+  }
+}
+@media (max-width: 600px) {
+  .luxury {
+    border-radius: 0 0 8px 8px;
+  }
+}
